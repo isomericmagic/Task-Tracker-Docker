@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.header, .main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    background: #1ce783;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.1s ease-in-out;
+}
+
+.header__link:hover {
+    color: #1dcad3;
+}
+
+.header__logo {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.form__input {
+    padding: 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #1ce783;
+    margin-bottom: 1rem;
+}
+
+.form__button {
+    font-size: inherit;
+    background-color: #1dcad3;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    padding: 0.5rem 2.5rem;
+    align-self: flex-end;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 26px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #1ce783;
+    border: 3px solid black;
+    border-radius: 6px;
+}
+
+.task:not(.completed) {
+    padding: 0;
+}
+
+.task:not(.completed):hover {
+    background-color: #1ce783;
+}
+
+.task__icon {
+    width: 1em;
+    height: 1em;
+}
+
+.task__name {
+    margin: 0;
+}
+
+.task__form {
+    width: 100%;
+}
+
+.task__button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: inherit;
+    font-family: inherit;
+    text-align: left;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/app
+    links:
+      - mongodb_container    
+  mongodb_container:
+    image: mongo:latest
+    hostname: tasks_mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017
