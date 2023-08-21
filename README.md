@@ -7,7 +7,7 @@ You will need to install docker. Once that's done just download the files, open 
 or\
 `docker compose up --build`\
 if you want to rebuild the app and database containers from scratch. Then just navigate to the following url:\
-http://127.0.0.1:5000/ \
+http://127.0.0.1:5005/ \
 in your browser and start adding tasks. To attach the New Relic python agent to the application, just uncomment the first 2 lines in the app.py file, add your license key to the newrelic.ini file and then just restart the app.\
 Once you are finished, just run\
 `docker compose down`\
