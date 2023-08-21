@@ -7,6 +7,7 @@ RUN apk add --no-cache gcc musl-dev linux-headers
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 RUN pip install flask
+RUN pip install newrelic
 RUN pip install "pymongo[srv]"
 RUN pip install python-dotenv
 EXPOSE 5000

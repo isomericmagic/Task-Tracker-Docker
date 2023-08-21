@@ -1,3 +1,5 @@
+#import newrelic.agent
+#newrelic.agent.initialize('newrelic.ini')
 import os
 from flask import Flask
 from routes import pages
